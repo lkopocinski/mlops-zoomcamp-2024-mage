@@ -2,8 +2,9 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration:
+    file_source:
+      path: unit_2_training/global_data_products/training_set.py
     global_data_product:
-      project: unit_3_observability
       uuid: training_set
   downstream_blocks:
   - hyperparameter_tuning/sklearn
@@ -19,7 +20,7 @@ blocks:
   upstream_blocks: []
   uuid: training_set
 - all_upstream_blocks_executed: true
-  color: teal
+  color: null
   configuration:
     dynamic: true
     file_source:
@@ -79,10 +80,9 @@ cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-05-15 01:11:30.960600+00:00'
+created_at: '2024-06-02 15:11:00.037546+00:00'
 data_integration: null
-description: Train models from the sklearn library (e.g. ExtraTreesRegressor, GradientBoostingRegressor,
-  Lasso, LinearRegression, LinearSVR, RandomForestRegressor).
+description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
@@ -95,12 +95,11 @@ run_pipeline_in_one_process: false
 settings:
   triggers: null
 spark_config: {}
-tags:
-- business critical
+tags: []
 type: python
 uuid: sklearn_training
 variables:
-  max_evaluations: 1
+  max_evaluations: 50
   random_state: 7
-variables_dir: /home/src/mage_data/unit_3_observability
+variables_dir: /home/src/mage_data/unit_2_training
 widgets: []

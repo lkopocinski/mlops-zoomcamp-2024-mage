@@ -13,7 +13,7 @@ blocks:
   has_callback: false
   language: python
   name: Training set
-  retry_config: null
+  retry_config: {}
   status: executed
   timeout: null
   type: global_data_product
